@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc509e71-244b-4113-92b8-a188a368530f" name="Changes" comment="aaa">
+    <list default="true" id="bc509e71-244b-4113-92b8-a188a368530f" name="Changes" comment="first steps">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +22,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "peps1k0lny"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="72811f2c-e8cc-4f7f-a896-c0d9aa294da7" />
+        <option name="url" value="https://github.com/peps1k0lny/Spspeaker.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
@@ -86,11 +101,44 @@
       <option name="project" value="LOCAL" />
       <updated>1709933219215</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first steps">
+      <option name="closed" value="true" />
+      <created>1709934458044</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709934458044</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first steps">
+      <option name="closed" value="true" />
+      <created>1709934468596</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709934468596</updated>
+    </task>
+    <task id="LOCAL-00004" summary="first steps">
+      <option name="closed" value="true" />
+      <created>1709934490339</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709934490339</updated>
+    </task>
+    <task id="LOCAL-00005" summary="first steps">
+      <option name="closed" value="true" />
+      <created>1709935482239</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709935482239</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aaa" />
-    <option name="LAST_COMMIT_MESSAGE" value="aaa" />
+    <MESSAGE value="first steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="first steps" />
   </component>
 </project>
