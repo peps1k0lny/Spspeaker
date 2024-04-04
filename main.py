@@ -43,10 +43,10 @@ class Spspeaker:
                             self.sp.current_playback()["device"]["volume_percent"] % 5)
 
         while True:
+            self.button_mute.when_pressed = self.mute
             if self.ismute is False:
                 self.rotor.when_rotated_clockwise = self.plus_volume
                 self.rotor.when_rotated_counter_clockwise = self.minus_volume
-            self.button_mute.when_pressed = self.mute
 
             self.button_pause.when_pressed = self.pause_or_start
             self.button_next.when_pressed = self.next_track
