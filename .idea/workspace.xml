@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc509e71-244b-4113-92b8-a188a368530f" name="Changes" comment="added sound control1">
+    <list default="true" id="bc509e71-244b-4113-92b8-a188a368530f" name="Changes" comment="new transfering playback in pause">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712244705000</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="new transfering playback in pause">
+      <option name="closed" value="true" />
+      <created>1712248366592</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712248366592</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -188,6 +196,7 @@
     <MESSAGE value="added some buttons" />
     <MESSAGE value="added sound control" />
     <MESSAGE value="added sound control1" />
-    <option name="LAST_COMMIT_MESSAGE" value="added sound control1" />
+    <MESSAGE value="new transfering playback in pause" />
+    <option name="LAST_COMMIT_MESSAGE" value="new transfering playback in pause" />
   </component>
 </project>
