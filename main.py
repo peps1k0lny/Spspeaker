@@ -61,8 +61,8 @@ class Spspeaker:
             self.button_playlist5.when_pressed = lambda: [self.start_playlist(4)]
 
     def pause_or_start(self):
-        self.pause = self.sp.current_playback()["is_playing"]
         self.sp.transfer_playback(device_id=self.DEVICE_ID, force_play=False)
+        self.pause = self.sp.current_playback()["is_playing"]
         if self.pause is False:
             print('start')
             self.sp.start_playback(device_id=self.DEVICE_ID)

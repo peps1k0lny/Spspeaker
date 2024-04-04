@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc509e71-244b-4113-92b8-a188a368530f" name="Changes" comment="added some buttons">
+    <list default="true" id="bc509e71-244b-4113-92b8-a188a368530f" name="Changes" comment="added sound control1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try.py" beforeDir="false" afterPath="$PROJECT_DIR$/try.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +162,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710420699089</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added sound control">
+      <option name="closed" value="true" />
+      <created>1712244469133</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712244469133</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added sound control1">
+      <option name="closed" value="true" />
+      <created>1712244705000</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712244705000</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,6 +186,8 @@
     <MESSAGE value="first steps" />
     <MESSAGE value="added multiple playlists" />
     <MESSAGE value="added some buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some buttons" />
+    <MESSAGE value="added sound control" />
+    <MESSAGE value="added sound control1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sound control1" />
   </component>
 </project>
