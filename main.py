@@ -24,23 +24,24 @@ class Spspeaker:
         self.shuffle = self.sp.current_playback()["shuffle_state"]
 
         self.button_pause = Button(27)
-        self.button_next = Button(22)
-        self.button_prev = Button(17)
-        self.button_shuffle = Button(23)
-        self.button_like = Button(24)
+        self.button_next = Button(17)
+        self.button_prev = Button(22)
+        self.button_shuffle = Button(10)
+        self.button_like = Button(2)
 
         self.button_playlist1 = Button(26)
-        self.button_playlist2 = Button(15)
-        self.button_playlist3 = Button(13)
-        self.button_playlist4 = Button(6)
-        self.button_playlist5 = Button(5)
+        self.button_playlist2 = Button(13)
+        self.button_playlist3 = Button(6)
+        self.button_playlist4 = Button(5)
+        self.button_playlist5 = Button(11)
 
         self.rotor = RotaryEncoder(7, 8, wrap=True, max_steps=100)
         self.button_mute = Button(25)
 
         self.ismute = False
-        self.rotor.steps = (self.sp.current_playback()["device"]["volume_percent"] -
-                            self.sp.current_playback()["device"]["volume_percent"] % 5)
+        volume = self.sp.current_playback()["device"]["volume_percent"] - self.sp.current_playback()["device"]["volume_percent"] % 5
+        self.rotor.steps = volume
+        print(self.rotor.steps)
 
         while True:
             self.button_mute.when_pressed = self.mute
@@ -60,7 +61,6 @@ class Spspeaker:
             self.button_playlist5.when_pressed = lambda: [self.start_playlist(4)]
 
     def pause_or_start(self):
-        self.sp.transfer_playback(device_id=self.DEVICE_ID, force_play=False)
         self.pause = self.sp.current_playback()["is_playing"]
         if self.pause is False:
             print('start')
@@ -94,7 +94,7 @@ class Spspeaker:
 
     def shuffle_tracks(self):
         print("shuffle")
-        self.sp.transfer_playback(device_id=self.DEVICE_ID, force_play=False)
+        self.shuffle = self.sp.current_playback()["shuffle_state"]
         if self.shuffle is False:
             self.sp.shuffle(state=True, device_id=self.DEVICE_ID)
         else:
@@ -119,9 +119,11 @@ class Spspeaker:
 
     def mute(self):
         if self.ismute is False:
+            print("mute")
             self.ismute = True
             self.sp.volume(0, device_id=self.DEVICE_ID)
         else:
+            print("unmute")
             self.sp.volume(self.rotor.steps, device_id=self.DEVICE_ID)
             self.ismute = False
 

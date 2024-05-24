@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc509e71-244b-4113-92b8-a188a368530f" name="Changes" comment="new transfering playback in pause">
+    <list default="true" id="bc509e71-244b-4113-92b8-a188a368530f" name="Changes" comment="new mute">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712248366592</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="new mute">
+      <option name="closed" value="true" />
+      <created>1712250002412</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712250002412</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,6 +207,7 @@
     <MESSAGE value="added sound control" />
     <MESSAGE value="added sound control1" />
     <MESSAGE value="new transfering playback in pause" />
-    <option name="LAST_COMMIT_MESSAGE" value="new transfering playback in pause" />
+    <MESSAGE value="new mute" />
+    <option name="LAST_COMMIT_MESSAGE" value="new mute" />
   </component>
 </project>
