@@ -117,16 +117,6 @@ class Spspeaker:
             print(self.rotor.steps)
             self.sp.volume(self.rotor.steps, device_id=self.DEVICE_ID)
 
-    def mute(self):
-        if self.ismute is False:
-            print("mute")
-            self.ismute = True
-            self.sp.volume(0, device_id=self.DEVICE_ID)
-        else:
-            print("unmute")
-            self.sp.volume(self.rotor.steps, device_id=self.DEVICE_ID)
-            self.ismute = False
-
 
 if __name__ == '__main__':
     Spspeaker()
