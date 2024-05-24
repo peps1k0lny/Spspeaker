@@ -6,9 +6,9 @@ from gpiozero import Button, RotaryEncoder
 class Spspeaker:
     def __init__(self):
         super().__init__()
-        self.DEVICE_ID = "509813d283dd03ad4038e74e28637311da0f8cd2"
-        self.CLIENT_ID = "81823b42f6df4915803c2cb78ca141b9"
-        self.CLIENT_SECRET = "f1c23862e3994a06bed524153212f688"
+        self.DEVICE_ID = "*"
+        self.CLIENT_ID = "*"
+        self.CLIENT_SECRET = "*"
         self.REDIRECT_URI = "http://127.0.0.1"
         self.SCOPE = "user-library-modify,user-read-playback-state,user-modify-playback-state"
         self.CACHE_PATH = "./tokens.txt"
