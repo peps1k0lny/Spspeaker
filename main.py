@@ -1,14 +1,15 @@
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from gpiozero import Button, RotaryEncoder
+import alsaaudio
 
 
 class Spspeaker:
     def __init__(self):
         super().__init__()
-        self.DEVICE_ID = "*"
-        self.CLIENT_ID = "*"
-        self.CLIENT_SECRET = "*"
+        self.DEVICE_ID = "509813d283dd03ad4038e74e28637311da0f8cd2"
+        self.CLIENT_ID = "de7e0679b6fc4220afe78fbd04fb8cf2"
+        self.CLIENT_SECRET = "b25ac44542c34376a962c90baac5f1db"
         self.REDIRECT_URI = "http://127.0.0.1"
         self.SCOPE = "user-library-modify,user-read-playback-state,user-modify-playback-state"
         self.CACHE_PATH = "./tokens.txt"
@@ -35,16 +36,14 @@ class Spspeaker:
         self.button_playlist4 = Button(5)
         self.button_playlist5 = Button(11)
 
-        self.rotor = RotaryEncoder(7, 8, wrap=True, max_steps=100)
-        self.button_mute = Button(25)
+        self.rotor = RotaryEncoder(8, 7, wrap=True, max_steps=100)
 
-        self.ismute = False
-        volume = self.sp.current_playback()["device"]["volume_percent"] - self.sp.current_playback()["device"]["volume_percent"] % 5
+        self.speaker = alsaaudio.Mixer()
+        volume = self.speaker.getvolume()[0] - self.speaker.getvolume()[0] % 5
         self.rotor.steps = volume
         print(self.rotor.steps)
 
         while True:
-            self.button_mute.when_pressed = self.mute
             self.rotor.when_rotated_clockwise = self.plus_volume
             self.rotor.when_rotated_counter_clockwise = self.minus_volume
 
@@ -74,7 +73,7 @@ class Spspeaker:
                      "spotify:playlist:37i9dQZF1EIhkGftn1D0Mh",
                      "spotify:playlist:37i9dQZF1Fa1IIVtEpGUcU",
                      "spotify:playlist:37i9dQZF1EIeYLhx9SJ9SI",
-                     "spotify:playlist:337o1CcuOoRfoTbmpZ4enF"]
+                     "spotify:album:6eUW0wxWtzkFdaEFsTJto6"]
         print('playlist', num + 1)
         self.sp.transfer_playback(device_id=self.DEVICE_ID, force_play=False)
         self.sp.start_playback(device_id=self.DEVICE_ID,
@@ -106,16 +105,16 @@ class Spspeaker:
         print(self.sp.current_user_playing_track()["item"]["uri"])
 
     def plus_volume(self):
-        if self.rotor.steps < 100 and self.ismute is False:
+        if 0 <= self.rotor.steps < 100:
             self.rotor.steps += 4
             print(self.rotor.steps)
-            self.sp.volume(self.rotor.steps, device_id=self.DEVICE_ID)
+            self.speaker.setvolume(self.rotor.steps)
 
     def minus_volume(self):
-        if self.rotor.steps > 0 and self.ismute is False:
+        if 0 < self.rotor.steps <= 100:
             self.rotor.steps -= 4
             print(self.rotor.steps)
-            self.sp.volume(self.rotor.steps, device_id=self.DEVICE_ID)
+            self.speaker.setvolume(self.rotor.steps)
 
 
 if __name__ == '__main__':

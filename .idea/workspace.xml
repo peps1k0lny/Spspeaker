@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc509e71-244b-4113-92b8-a188a368530f" name="Changes" comment="new mute">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bc509e71-244b-4113-92b8-a188a368530f" name="Changes" comment="Final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -53,6 +52,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.newone.executor&quot;: &quot;Run&quot;,
     &quot;Python.try.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -196,7 +196,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712250002412</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Final version">
+      <option name="closed" value="true" />
+      <created>1716590122633</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716590122633</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Final">
+      <option name="closed" value="true" />
+      <created>1716590243667</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716590243667</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,6 +224,8 @@
     <MESSAGE value="added sound control1" />
     <MESSAGE value="new transfering playback in pause" />
     <MESSAGE value="new mute" />
-    <option name="LAST_COMMIT_MESSAGE" value="new mute" />
+    <MESSAGE value="Final version" />
+    <MESSAGE value="Final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final" />
   </component>
 </project>
