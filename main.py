@@ -8,8 +8,8 @@ class Spspeaker:
     def __init__(self):
         super().__init__()
         self.DEVICE_ID = "509813d283dd03ad4038e74e28637311da0f8cd2"
-        self.CLIENT_ID = "de7e0679b6fc4220afe78fbd04fb8cf2"
-        self.CLIENT_SECRET = "b25ac44542c34376a962c90baac5f1db"
+        self.CLIENT_ID = "***"
+        self.CLIENT_SECRET = "***"
         self.REDIRECT_URI = "http://127.0.0.1"
         self.SCOPE = "user-library-modify,user-read-playback-state,user-modify-playback-state"
         self.CACHE_PATH = "./tokens.txt"
